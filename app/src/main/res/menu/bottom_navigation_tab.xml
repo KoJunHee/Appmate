@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/firstTab"
+        android:icon="@drawable/home_off"
+        android:title="프로젝트"
+        android:checked="false"/>
+    <item
+        android:id="@+id/secondTab"
+        android:icon="@drawable/search_off"
+        android:title="피플"
+        android:checked="false"/>
+    <item
+        android:id="@+id/thirdTab"
+        android:icon="@drawable/people_off"
+        android:title="프로필"
+        android:checked="false" />
+</menu>
+

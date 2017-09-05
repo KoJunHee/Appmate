@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvListItemPeople"
+        android:layout_width="328dp"
+        android:layout_height="186dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:background="#f7fafd"
+        card:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--캐릭터-->
+            <LinearLayout
+                android:id="@+id/llPeopleCharacter"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivPersonCharacter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />®
+            </LinearLayout>
+
+
+            <!--name-->
+            <LinearLayout
+                android:id="@+id/llPeopleName"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_alignTop="@+id/llPeopleCharacter"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/llPeopleCharacter">
+
+                <TextView
+                    android:id="@+id/tvPersonNickName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:lineSpacingExtra="3sp"
+                    android:textColor="#606060"
+                    android:textSize="16sp"
+                    tools:text="Katniss Brochi" />
+            </LinearLayout>
+
+            <!--직군-->
+            <LinearLayout
+                android:id="@+id/llPeopleJobPart"
+                android:layout_width="wrap_content"
+                android:layout_height="19dp"
+                android:layout_alignLeft="@+id/llPeopleName"
+                android:layout_below="@+id/llPeopleName">
+
+                <TextView
+                    android:id="@+id/tvPersonJobPart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="8sp"
+                    android:textColor="#888888"
+                    android:textSize="11sp"
+                    tools:text="시스템엔지니어" />
+            </LinearLayout>
+
+
+            <!--마이페이지 이미지01-->
+            <LinearLayout
+                android:id="@+id/llPeopleMyPage01"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_alignLeft="@+id/llPeopleJobPart"
+                android:layout_below="@+id/llPeopleJobPart"
+                android:layout_marginTop="16dp">
+
+                <ImageView
+                    android:id="@+id/ivPersonMyPage01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/story_photo_1" />
+            </LinearLayout>
+
+            <!--마이페이지 이미지02-->
+            <LinearLayout
+                android:id="@+id/llPeopleMyPage02"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_alignTop="@+id/llPeopleMyPage01"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/llPeopleMyPage01">
+
+                <ImageView
+                    android:id="@+id/ivPersonMyPage02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/story_photo_4" />
+            </LinearLayout>
+
+            <!--마이페이지 이미지03-->
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignTop="@+id/llPeopleMyPage02"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@+id/llPeopleMyPage02">
+
+                <ImageView
+                    android:id="@+id/ivMyPageMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/more_photo_number" />
+            </LinearLayout>
+
+            <!--구분선-->
+            <LinearLayout
+                android:id="@+id/lllinePeople"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="131dp">
+
+                <ImageView
+                    android:id="@+id/linePeople"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/line_people" />
+            </LinearLayout>
+
+
+            <!--지표-->
+            <LinearLayout
+                android:id="@+id/llIndicatorPeople"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="153dp">
+
+                <ImageView
+                    android:id="@+id/ivIndicatorPeople"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/indicator_people" />
+            </LinearLayout>
+
+            <!--거리-->
+            <LinearLayout
+                android:id="@+id/lldistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/llIndicatorPeople"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@+id/llIndicatorPeople">
+
+                <TextView
+                    android:id="@+id/tvDistance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="#7b7d84"
+                    android:textSize="11sp"
+                    android:textStyle="normal"
+                    tools:text="50" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/lldistance"
+                android:layout_toRightOf="@+id/lldistance">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="km"
+                    android:textColor="#7b7d84"
+                    android:textSize="11sp"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+            <!--이미지01. -->
+            <LinearLayout
+                android:id="@+id/llPeopleChoiceImage01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="149dp"
+                android:layout_toLeftOf="@+id/llPeopleChoiceImage02">
+
+                <ImageView
+                    android:id="@+id/ivPersonChoiceImage01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:adjustViewBounds="true" />
+            </LinearLayout>
+
+            <!--이미지02-->
+            <LinearLayout
+                android:id="@+id/llPeopleChoiceImage02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="149dp"
+                android:layout_toLeftOf="@+id/llPeopleChoiceImage03">
+
+                <ImageView
+                    android:id="@+id/ivPersonChoiceImage02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:adjustViewBounds="true" />
+            </LinearLayout>
+
+            <!--이미지03-->
+            <LinearLayout
+                android:id="@+id/llPeopleChoiceImage03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="149dp">
+
+                <ImageView
+                    android:id="@+id/ivPersonChoiceImage03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="21dp"
+                    android:adjustViewBounds="true" />
+            </LinearLayout>
+
+            <!--유저 아이디-->
+            <TextView
+                android:id="@+id/tvUserID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#f7fafd"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+

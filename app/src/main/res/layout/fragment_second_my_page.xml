@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--indicator01-->
+        <LinearLayout
+            android:id="@+id/indicator01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp">
+
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="14dp"
+                android:src="@drawable/indicator_profile_project01" />
+        </LinearLayout>
+
+        <!--진행중인 프로젝트 텍스트-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/indicator01"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/indicator01">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="-0.05"
+                android:lineSpacingExtra="10sp"
+                android:text="진행중인 프로젝트"
+                android:textColor="#7b7d84"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+
+        <!--진행중인 프로젝트 이미지들-->
+        <LinearLayout
+            android:id="@+id/llGoingProjectMyPage"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_below="@+id/indicator01">
+
+            <org.androidtown.appmate.activity.PagerContainer
+                android:id="@+id/pcGoingProjectMyPage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v4.view.ViewPager
+                    android:layout_width="150dp"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center_horizontal" />
+            </org.androidtown.appmate.activity.PagerContainer>
+        </LinearLayout>
+
+
+
+        <!--indicator02-->
+        <LinearLayout
+            android:id="@+id/indicator02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/indicator01"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="210dp">
+
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="14dp"
+                android:src="@drawable/indicator_profile_project02" />
+        </LinearLayout>
+
+        <!--지원한 프로젝트 텍스트-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/indicator02"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/indicator02">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="-0.05"
+                android:lineSpacingExtra="10sp"
+                android:text="지원한 프로젝트"
+                android:textColor="#7b7d84"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!--지원한 프로젝트 이미지들-->
+        <LinearLayout
+            android:id="@+id/llApplyProjectMyPage"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_below="@+id/indicator02">
+
+            <org.androidtown.appmate.activity.PagerContainer
+                android:id="@+id/pcApplyProjectMyPage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v4.view.ViewPager
+                    android:layout_width="150dp"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center_horizontal" />
+            </org.androidtown.appmate.activity.PagerContainer>
+        </LinearLayout>
+
+
+        <!--indicator03-->
+        <LinearLayout
+            android:id="@+id/indicator03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/indicator02"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="210dp">
+
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="14dp"
+                android:src="@drawable/indicator_profile_project03" />
+        </LinearLayout>
+
+        <!--모집중인 프로젝트 텍스트-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/indicator03"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/indicator03">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="-0.05"
+                android:lineSpacingExtra="10sp"
+                android:text="모집중인 프로젝트"
+                android:textColor="#7b7d84"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!--모집중인 프로젝트 이미지들-->
+        <LinearLayout
+            android:id="@+id/llRecruitingProjectMyPage"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_below="@+id/indicator03">
+
+            <org.androidtown.appmate.activity.PagerContainer
+                android:id="@+id/pcRecruitingProjectMyPage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v4.view.ViewPager
+                    android:layout_width="150dp"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center_horizontal" />
+
+            </org.androidtown.appmate.activity.PagerContainer>
+        </LinearLayout>
+
+        <!--indicator04-->
+        <LinearLayout
+            android:id="@+id/indicator04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/indicator03"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="210dp">
+
+            <ImageView
+                android:layout_width="2dp"
+                android:layout_height="14dp"
+                android:src="@drawable/indicator_profile_project02" />
+        </LinearLayout>
+
+        <!--찜한 프로젝트 텍스트-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/indicator04"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/indicator04">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="-0.05"
+                android:lineSpacingExtra="10sp"
+                android:text="찜한 프로젝트"
+                android:textColor="#7b7d84"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <!--찜한 프로젝트 이미지들-->
+        <LinearLayout
+            android:id="@+id/llSelectProjectMyPage"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/indicator04">
+
+            <org.androidtown.appmate.activity.PagerContainer
+                android:id="@+id/pcSelectProjectMyPage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v4.view.ViewPager
+                    android:layout_width="150dp"
+                    android:layout_height="190dp"
+                    android:layout_gravity="center_horizontal" />
+            </org.androidtown.appmate.activity.PagerContainer>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

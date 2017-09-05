@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/icToolBarPartSkill"
+        layout="@layout/tool_bar_part_skill" />
+
+    <!--프로젝트 관련 스킬 텍스트-->
+    <LinearLayout
+        android:id="@+id/lltext01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="72dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="프로젝트 관련스킬"
+            android:textColor="#9d9ea6"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!--프로젝트 관련 스킬 테그 이미지-->
+    <LinearLayout
+        android:id="@+id/llRecycler01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lltext01"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="18dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvPartSkill01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+    <!--프로젝트 관련 스킬 텍스트-->
+    <LinearLayout
+        android:id="@+id/lltext02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llRecycler01"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="48dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="프로젝트 관련 분야"
+            android:textColor="#9d9ea6"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!--프로젝트 관련 스킬 테그 이미지-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lltext02"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="18dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvPartSkill02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+</RelativeLayout>

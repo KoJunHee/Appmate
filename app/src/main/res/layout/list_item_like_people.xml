@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="76dp"
+    android:layout_height="94dp"
+    android:layout_marginTop="22dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--유저 이미지-->
+        <FrameLayout
+            android:layout_width="72dp"
+            android:layout_height="72dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivLikeUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:src="@drawable/bluetree" />
+            <ImageView
+                android:id="@+id/ivChecked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/choice_bg"
+                android:visibility="gone" />
+        </FrameLayout>
+
+
+
+        <!--유저 닉네임-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvLikeUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="#5d5d5d"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                tools:text="aaa" />
+        </LinearLayout>
+
+        <!--체크된 인원수-->
+        <TextView
+            android:id="@+id/tvFlag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:visibility="invisible" />
+
+        <!--유저 아이디 임시저장-->
+        <TextView
+            android:id="@+id/tvUserID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible" />
+
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="navigation_item_color">#0f16d1</color>
+    <color name="grey">#DCDCDC</color>
+    <color name="iconTintColor">#ff5e00</color>
+    <color name="black">#000000</color>
+    <color name="tabClicked">#FF5586</color>
+    <color name="myPageTab">#5D00A9</color>
+    <color name="otherUserPageTab">#3CE9ED</color>
+    <color name="otherUser">#2FFBFD</color>
+    <color name="projectHome">#BD1567</color>
+    <color name="mypage">#46007F</color>
+    <color name="people">#23B9BC</color>
+    <color name="register">#3A1867</color>
+</resources>

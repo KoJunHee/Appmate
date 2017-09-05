@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1056701105969",
+    "firebase_url": "https://appmate-b517e.firebaseio.com",
+    "project_id": "appmate-b517e",
+    "storage_bucket": "appmate-b517e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056701105969:android:b7acf44826f63d3c",
+        "android_client_info": {
+          "package_name": "org.androidtown.appmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056701105969-isp86ejlun65pc7ebkphoujbhjel4uht.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.androidtown.appmate",
+            "certificate_hash": "4ee007faaa0d2197c76bd275917d362c1d3a1d5d"
+          }
+        },
+        {
+          "client_id": "1056701105969-ppthhlf8krqsmds5k3uqu7r4lc8mduu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB__t-DterSFz0_nyyC0YliPSWnvHIaf_Q"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1056701105969-ppthhlf8krqsmds5k3uqu7r4lc8mduu9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/icToolBarMypage"
+        layout="@layout/tool_bar_mypage" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/icToolBarMypage">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!--배경화면-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@color/myPageTab"></LinearLayout>
+
+
+            <!--첫번째 카드뷰-->
+            <LinearLayout
+                android:id="@+id/llFirstCardView"
+                android:layout_width="344dp"
+                android:layout_height="232dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="163dp"
+                android:background="#ffffff">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    card:cardCornerRadius="3dp">
+
+                    <!--identity 설명-->
+                    <LinearLayout
+                        android:id="@+id/llidentityText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="31dp"
+                        android:layout_marginTop="47dp">
+
+                        <TextView
+                            android:id="@+id/tvIdentityName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:lineSpacingExtra="8sp"
+                            android:textColor="#29d8e4"
+                            android:textSize="12sp"
+                            android:textStyle="normal"
+                            tools:text="Quick Learner" />
+                    </LinearLayout>
+
+                    <!--nick name-->
+                    <LinearLayout
+                        android:id="@+id/llNickName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="21dp"
+                        android:layout_marginLeft="31dp"
+                        android:layout_marginTop="68dp">
+
+                        <TextView
+                            android:id="@+id/tvUserNickname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            tools:text="Friker Crush" />
+                    </LinearLayout>
+
+
+                    <!--explanation-->
+                    <LinearLayout
+                        android:id="@+id/llExplanation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="31dp"
+                        android:layout_marginTop="91dp">
+
+                        <TextView
+                            android:id="@+id/tvIntroduction"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:letterSpacing="-0.05"
+                            android:lineSpacingExtra="10sp"
+                            android:textColor="#8b000000"
+                            android:textSize="10sp"
+                            tools:text="안녕하세요. 개발자를 꿈꾸는 디자이너입니다." />
+                    </LinearLayout>
+
+
+                    <!--숫자들-->
+                    <LinearLayout
+                        android:layout_width="281dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="31dp"
+                        android:layout_marginTop="126dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/tvFollowingNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="#5d00a9"
+                                android:textSize="17sp"
+                                android:textStyle="normal"
+                                tools:text="172" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/tvFollowerNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="#5d00a9"
+                                android:textSize="17sp"
+                                android:textStyle="normal"
+                                tools:text="152" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/tvHighfiveNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="#5d00a9"
+                                android:textSize="17sp"
+                                android:textStyle="normal"
+                                tools:text="0" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:id="@+id/tvBadgeNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="sans-serif-medium"
+                                android:textColor="#5d00a9"
+                                android:textSize="17sp"
+                                android:textStyle="normal"
+                                tools:text="12" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <!--여기까지 숫자들-->
+
+                    <!--숫자 밑에 텍스트들-->
+                    <LinearLayout
+                        android:layout_width="281dp"
+                        android:layout_height="17dp"
+                        android:layout_marginLeft="31dp"
+                        android:layout_marginTop="150dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:letterSpacing="-0.04"
+                                android:text="팔로잉"
+                                android:textColor="#5d5d5d"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:letterSpacing="-0.04"
+                                android:text="팔로워"
+                                android:textColor="#5d5d5d"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:letterSpacing="-0.04"
+                                android:text="하이파이브"
+                                android:textColor="#5d5d5d"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:letterSpacing="-0.04"
+                                android:text="뱃지"
+                                android:textColor="#5d5d5d"
+                                android:textSize="11sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <!--탭 레이아웃-->
+                    <LinearLayout
+                        android:id="@+id/llTabMyPage"
+                        android:layout_width="344dp"
+                        android:layout_height="33dp"
+                        android:layout_marginTop="198dp">
+
+                        <android.support.design.widget.TabLayout
+                            android:id="@+id/tlMyPage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+            <!--여기까지 카드 뷰-->
+
+
+            <!--사람 이미지-->
+            <LinearLayout
+                android:id="@+id/llCharacter"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="90dp">
+                <ImageView
+                    android:id="@+id/ivUserImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></ImageView>
+            </LinearLayout>
+
+
+            <!--아이덴티티-->
+            <LinearLayout
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="168dp"
+                android:layout_marginTop="137dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/grand" />
+            </LinearLayout>
+
+
+            <!--프래그먼트 두 개-->
+            <FrameLayout
+                android:id="@+id/flMyPageContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/llFirstCardView"
+                android:layout_marginBottom="50dp"
+                android:layout_marginTop="10dp"></FrameLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <!--하단탭-->
+    <include
+        android:id="@+id/navigation"
+        layout="@layout/bottom_navigation_layout"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
+
+
+
+

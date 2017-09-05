@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">APPMATE</string>
+    <string name="project">PROJECT</string>
+    <string name="people">PEOPLE</string>
+    <string name="mypage">MY PAGE</string>
+    <string name="profile_modify">프로필 수정하기</string>
+    <string name="tag_modify">태그 수정하기</string>
+</resources>

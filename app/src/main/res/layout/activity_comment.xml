@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="org.androidtown.appmate.activity.CommentActivity"
+    android:background="#f1f1f1">
+
+
+    <include
+        android:id="@+id/icToolBarComment"
+        layout="@layout/tool_bar_comment" />
+
+    <!--댓글 목록 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/icToolBarComment">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_marginBottom="54dp"
+            android:layout_marginTop="8dp">
+        </android.support.v7.widget.RecyclerView>
+
+
+
+        <RelativeLayout
+            android:layout_width="360dp"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true">
+            >
+            <!--덧글 입력 부분 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="18dp">
+                <EditText
+                    android:id="@+id/etCommentWriting"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="덧글을 입력하세요"
+                    android:background="@null">
+                </EditText>
+            </LinearLayout>
+
+            <!--enter-->
+            <LinearLayout
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="322dp"
+                android:layout_marginTop="12dp">
+                <ImageView
+                    android:id="@+id/ivEnter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/enter_comment"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f7fa">
+
+    <include
+        android:id="@+id/icToolBarLikePeople"
+        layout="@layout/tool_bar_apply_people"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvApplyPeople"
+        android:layout_width="324dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icToolBarLikePeople"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp">
+    </android.support.v7.widget.RecyclerView>
+
+
+    <!--지원하기 버튼-->
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/ivCheckApply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

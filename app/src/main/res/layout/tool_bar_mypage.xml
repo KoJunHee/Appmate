@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="360dp"
+    android:layout_height="48dp">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tool_bar_mypage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/myPageTab">
+        <!--수정하기-->
+        <LinearLayout
+            android:id="@+id/llMypageModify"
+            android:layout_width="48dp"
+            android:layout_height="49dp"
+            android:layout_alignTop="@+id/llMyPageBack"
+            android:layout_marginLeft="310dp"
+            android:layout_toRightOf="@+id/llMyPageBack">
+            <ImageView
+                android:layout_marginLeft="30dp"
+                android:layout_gravity="center"
+                android:id="@+id/ivMypageModify"
+                android:layout_width="5dp"
+                android:layout_height="19dp"
+                android:src="@drawable/mypage_tabbar_rightend" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+</LinearLayout>

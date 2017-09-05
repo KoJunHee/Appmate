@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--지도-->
+    <RelativeLayout
+        android:id="@+id/llMapBackGround"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f1cccc">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/map_fragment"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </LinearLayout>
+        <!--back button-->
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:id="@+id/ivCancelMap"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/x_back_button" />
+        </LinearLayout>
+
+
+        <!--재 검색 -->
+        <LinearLayout
+            android:id="@+id/research"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/back"
+            android:layout_marginLeft="87dp"
+            android:layout_toRightOf="@+id/back">
+
+            <ImageView
+                android:id="@+id/ivResearch"
+                android:layout_width="107dp"
+                android:layout_height="28dp"
+                android:src="@drawable/refresh_searching" />
+        </LinearLayout>
+
+
+        <!--내 위치-->
+        <LinearLayout
+            android:id="@+id/mylocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/research"
+            android:layout_marginLeft="85dp"
+            android:layout_toRightOf="@+id/research">
+
+            <ImageView
+                android:id="@+id/ivMyLocation"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:src="@drawable/my_location" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--인재카드-->
+    <LinearLayout
+        android:id="@+id/llMapPeople"
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp">
+
+        <org.androidtown.appmate.activity.PagerContainer
+            android:id="@+id/pcMapPeople"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v4.view.ViewPager
+                android:layout_width="154dp"
+                android:layout_height="181dp"
+                android:layout_gravity="center_horizontal">
+            </android.support.v4.view.ViewPager>
+        </org.androidtown.appmate.activity.PagerContainer>
+    </LinearLayout>
+
+
+</RelativeLayout>

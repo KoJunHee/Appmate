@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--첫번째 카드뷰 시작-->
+        <LinearLayout
+            android:id="@+id/llimages"
+            android:layout_width="344dp"
+            android:layout_height="174dp"
+            android:layout_marginLeft="8dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="4dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/story_photo_1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:layout_marginLeft="89dp"
+                    android:layout_marginTop="4dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/story_photo_2" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:layout_marginLeft="174dp"
+                    android:layout_marginTop="4dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/story_photo_3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:layout_marginLeft="259dp"
+                    android:layout_marginTop="4dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/story_photo_4" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="89dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/story_photo_5" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:layout_marginLeft="89dp"
+                    android:layout_marginTop="89dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/story_photo_6" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:layout_marginLeft="174dp"
+                    android:layout_marginTop="89dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/story_photo_7" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:layout_marginLeft="259dp"
+                    android:layout_marginTop="89dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/story_photo_8" />
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <!--첫번째 카드뷰 끝-->
+
+        <!--두번째 카드뷰 시작-->
+        <LinearLayout
+            android:id="@+id/llSecondCardView"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llimages"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--indicator01-->
+                    <LinearLayout
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="18dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/indicator01_mypage" />
+                    </LinearLayout>
+
+                    <!--구분선-->
+                    <LinearLayout
+                        android:id="@+id/line01"
+                        android:layout_width="1dp"
+                        android:layout_height="14dp"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="19dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/line_mypage" />
+                    </LinearLayout>
+
+                    <!--자주가는 장소 텍스트-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/line01"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/line01">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:letterSpacing="-0.04"
+                            android:lineSpacingExtra="8sp"
+                            android:text="자주 가는 장소"
+                            android:textColor="#9b9b9b"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <!--자주가는 장소 : 입력한거-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="71dp"
+                        android:layout_marginTop="35dp">
+
+                        <TextView
+                            android:id="@+id/tvFavoritePlace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:letterSpacing="-0.04"
+                            android:lineSpacingExtra="8sp"
+                            android:textColor="#4a4a4a"
+                            android:textSize="12sp"
+                            tools:text="서울시 강남구 영동대로 417 구글캠퍼스서울" />
+                    </LinearLayout>
+
+                    <!--indicator02-->
+                    <LinearLayout
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginLeft="31dp"
+                        android:layout_marginTop="76dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/indicator02_mypage" />
+                    </LinearLayout>
+
+                    <!--구분선-->
+                    <LinearLayout
+                        android:id="@+id/line02"
+                        android:layout_width="1dp"
+                        android:layout_height="14dp"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="76dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/line_mypage" />
+                    </LinearLayout>
+
+                    <!--경력사항 텍스트-->
+                    <LinearLayout
+                        android:id="@+id/llCarrer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/line02"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/line02">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:letterSpacing="-0.04"
+                            android:lineSpacingExtra="8sp"
+                            android:text="경력사항"
+                            android:textColor="#9b9b9b"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <!--경력사항 입력부분-->
+                    <LinearLayout
+                        android:id="@+id/llRecyclerViewCareer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llCarrer"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="7dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvCarrer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+                    </LinearLayout>
+
+
+                    <!--indicator03-->
+                    <LinearLayout
+                        android:id="@+id/llindicator03"
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_below="@+id/llRecyclerViewCareer"
+                        android:layout_marginLeft="31dp"
+                        android:layout_marginTop="21dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/indicator03_mypage" />
+                    </LinearLayout>
+
+                    <!--구분선-->
+                    <LinearLayout
+                        android:id="@+id/line03"
+                        android:layout_width="1dp"
+                        android:layout_height="14dp"
+                        android:layout_alignTop="@+id/llindicator03"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@+id/llindicator03">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/line_mypage" />
+                    </LinearLayout>
+
+                    <!--포트폴리오 텍스트-->
+                    <LinearLayout
+                        android:id="@+id/llportfolioText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/line03"
+                        android:layout_marginLeft="13dp"
+                        android:layout_toRightOf="@+id/line03">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:letterSpacing="-0.04"
+                            android:lineSpacingExtra="8sp"
+                            android:text="포트폴리오"
+                            android:textColor="#9b9b9b"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <!--포트폴리오 입력 부분-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llportfolioText"
+                        android:layout_marginLeft="71dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="18dp">
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvPortfolio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <!--두번째 카드뷰 끝-->
+
+        <!--&&&&&&&&&&&&&&&&&&&&&&&&&&&&&여기까찌 테스트&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&-->
+
+        <!--세번째 카드뷰 시작-->
+        <LinearLayout
+            android:id="@+id/llThirdCardView"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llSecondCardView"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--indicator01-->
+                    <LinearLayout
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginLeft="31dp"
+                        android:layout_marginTop="19dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/indicator01_mypage" />
+                    </LinearLayout>
+
+                    <!--구분선-->
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="14dp"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="19dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/line_mypage" />
+                    </LinearLayout>
+
+                    <!--내가 가진 스킬 텍스트-->
+                    <LinearLayout
+                        android:id="@+id/llHavingSkillText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="71dp"
+                        android:layout_marginTop="16dp">
+
+                        <TextView
+                            android:id="@+id/tvHavingSkill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:letterSpacing="-0.04"
+                            android:lineSpacingExtra="8sp"
+                            android:text="내가 가진 스킬"
+                            android:textColor="#9b9b9b"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llHavingSkillText"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="13dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvHavingSkill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <!--세 번째 카드 끝-->
+
+
+        <!--네번째 카드뷰 시작-->
+        <LinearLayout
+            android:id="@+id/llFourthCardView"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llThirdCardView"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <!--indicator01-->
+                    <LinearLayout
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginLeft="31dp"
+                        android:layout_marginTop="19dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/indicator02_mypage" />
+                    </LinearLayout>
+
+                    <!--구분선-->
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="14dp"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="19dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/line_mypage" />
+                    </LinearLayout>
+
+                    <!--내가 원하는 스킬 텍스트-->
+                    <LinearLayout
+                        android:id="@+id/llHopingSkill"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="71dp"
+                        android:layout_marginTop="16dp">
+                        <TextView
+                            android:id="@+id/tvHopingSkill"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:letterSpacing="-0.04"
+                            android:lineSpacingExtra="8sp"
+                            android:text="내가 원하는 스킬"
+                            android:textColor="#9b9b9b"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_below="@+id/llHopingSkill"
+                        android:layout_marginBottom="13dp">
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvHoping"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <!--네 번째 카드 끝-->
+
+
+        <!--다섯 번째 카드뷰 시작-->
+        <LinearLayout
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llFourthCardView"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="7dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                app:cardCornerRadius="5dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <!--indicator01-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="31dp"
+                        android:layout_marginTop="19dp">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/indicator03_mypage" />
+                    </LinearLayout>
+
+                    <!--구분선-->
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="14dp"
+                        android:layout_marginLeft="57dp"
+                        android:layout_marginTop="19dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/line_mypage" />
+                    </LinearLayout>
+
+                    <!--나의 관심 분야 텍스트-->
+                    <LinearLayout
+                        android:id="@+id/llfavoriteField"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="71dp"
+                        android:layout_marginTop="16dp">
+                        <TextView
+                            android:id="@+id/tvFavoriteField"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:letterSpacing="-0.04"
+                            android:lineSpacingExtra="8sp"
+                            android:text="나의 관심 분야"
+                            android:textColor="#9b9b9b"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llfavoriteField"
+                        android:layout_marginLeft="70dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="13dp">
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvFavoriteField"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        <!--다 번째 카드 끝-->
+
+
+    </RelativeLayout>
+
+</ScrollView>

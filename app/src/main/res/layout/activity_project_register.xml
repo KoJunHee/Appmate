@@ -1,0 +1,2171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.androidtown.appmate.activity.ProjectRegisterActivity">
+
+    <include
+        android:id="@+id/icToolBarComment"
+        layout="@layout/tool_bar_project_register" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/icToolBarComment">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                <!--프로젝트 제목 텍스트-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="30dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="4sp"
+                        android:text="프로젝트 제목"
+                        android:textColor="#5d5d5d"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--프로젝트 제목 입력-->
+                <LinearLayout
+                    android:id="@+id/llTitleEditText"
+                    android:layout_width="329dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="50dp">
+
+                    <EditText
+                        android:id="@+id/etTitle"
+                        android:layout_width="329dp"
+                        android:layout_height="wrap_content"
+                        android:hint="프로젝트 제목을 입력해주세요"
+                        android:textColorHint="#e0e2e4"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <!--프로젝트 제목 글자수-->
+                <LinearLayout
+                    android:id="@+id/llTitleTextNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/llTitleEditText"
+                    android:layout_marginTop="89dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="end"
+                        android:text="/ 50"
+                        android:textColor="#61000000"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <!--제목 입력된 글자수-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/llTitleTextNumber"
+                    android:layout_marginRight="4dp"
+                    android:layout_toLeftOf="@+id/llTitleTextNumber">
+
+                    <TextView
+                        android:id="@+id/tvTextNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="end"
+                        android:textColor="#61000000"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        tools:text="10" />
+                </LinearLayout>
+
+                <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+
+                <!--프로젝트 내용 텍스트-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="127dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="4sp"
+                        android:text="프로젝트 내용"
+                        android:textColor="#5d5d5d"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--프로젝트 내용 입력-->
+                <LinearLayout
+                    android:id="@+id/llContentsEditText"
+                    android:layout_width="329dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="151dp">
+
+                    <EditText
+                        android:id="@+id/etContents"
+                        android:layout_width="329dp"
+                        android:layout_height="wrap_content"
+                        android:hint="프로젝트 제목을 입력해주세요"
+                        android:textColorHint="#e0e2e4" />
+                </LinearLayout>
+
+                <!--프로젝트 내용 글자수-->
+                <LinearLayout
+                    android:id="@+id/llContentsTextNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/llContentsEditText"
+                    android:layout_marginTop="190dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="end"
+                        android:text="/ 400"
+                        android:textColor="#61000000"
+                        android:textSize="12sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <!--프로젝트 내용 입력된 글자수-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/llContentsTextNumber"
+                    android:layout_marginRight="4dp"
+                    android:layout_toLeftOf="@+id/llContentsTextNumber">
+
+                    <TextView
+                        android:id="@+id/tvContentsNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:gravity="end"
+                        android:textColor="#61000000"
+                        android:textSize="12sp"
+                        android:textStyle="normal"
+                        tools:text="233" />
+                </LinearLayout>
+
+                <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+
+                <!--프로젝트 지원 마감일 텍스트-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="224dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="4sp"
+                        android:text="프로젝트 지원마감일"
+                        android:textColor="#5d5d5d"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--프로젝트 마감일 입력 레이아웃-->
+                <LinearLayout
+                    android:id="@+id/llDataPicker"
+                    android:layout_width="327dp"
+                    android:layout_height="52dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="246dp"
+                    android:background="#fafafa">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:cardCornerRadius="3dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:layout_marginTop="17dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/calendar_register" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="40dp"
+                            android:layout_marginTop="14dp">
+
+                            <TextView
+                                android:id="@+id/tvDueDay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:lineSpacingExtra="8sp"
+                                android:text="프로젝트 지원마감일을 지정해주세요"
+                                android:textColor="#e0e2e4"
+                                android:textSize="16sp" />
+                        </LinearLayout>
+
+                    </android.support.v7.widget.CardView>
+
+
+                </LinearLayout>
+
+                <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                <!--프로젝트 이미지 선택 텍스트-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="344dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="4sp"
+                        android:text="프로젝트 대표 이미지를 선택해주세요"
+                        android:textColor="#5d5d5d"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <GridLayout
+                    android:id="@+id/grid"
+                    android:layout_width="327dp"
+                    android:layout_height="187dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="368dp"
+                    android:columnCount="4"
+                    android:rowCount="3">
+
+                    <CheckBox
+                        android:id="@+id/cb1"
+                        android:button="@drawable/item_img01_selector_register" />
+
+
+                    <CheckBox
+                        android:layout_marginLeft="8dp"
+                        android:button="@drawable/item_img02_selector_register" />
+
+                    <CheckBox
+                        android:layout_marginLeft="8dp"
+                        android:button="@drawable/item_img03_selector_register" />
+
+                    <CheckBox
+                        android:layout_marginLeft="8dp"
+                        android:button="@drawable/item_img04_selector_register" />
+
+                    <CheckBox
+                        android:layout_marginTop="8dp"
+                        android:button="@drawable/item_img05_selector_register" />
+
+                    <CheckBox
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:button="@drawable/item_img06_selector_register" />
+
+
+                    <CheckBox
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:button="@drawable/item_img07_selector_register" />
+
+
+                    <CheckBox
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:button="@drawable/item_img08_selector_register" />
+
+
+                    <CheckBox
+                        android:layout_marginTop="8dp"
+                        android:button="@drawable/item_img09_selector_register" />
+
+
+                    <CheckBox
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:button="@drawable/item_img10_selector_register" />
+
+                    <CheckBox
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:button="@drawable/item_img11_selector_register" />
+
+
+                    <CheckBox
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:button="@drawable/item_img12_selector_register" />
+                </GridLayout>
+
+                <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                <!--프로젝트 임원 텍스트-->
+                <LinearLayout
+                    android:id="@+id/llpersonNumberText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/grid"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="46dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="4sp"
+                        android:text="프로젝트팀 인원"
+                        android:textColor="#5d5d5d"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--모집하는 팀원 정해주세요-->
+                <LinearLayout
+                    android:id="@+id/text01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llpersonNumberText"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="9dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="모집하는 팀원수를 지정해주세요 " />
+                </LinearLayout>
+
+                <!--마이너스 이미지-->
+                <LinearLayout
+                    android:id="@+id/minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/text01"
+                    android:layout_marginLeft="268dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/minus_register" />
+                </LinearLayout>
+
+                <!--인원-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/text01"
+                    android:layout_marginLeft="296dp">
+
+                    <TextView
+                        android:id="@+id/tvRecruitingNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="0"
+                        android:textColor="#606060"
+                        android:textSize="18sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+                <!--플러스 이미지-->
+                <LinearLayout
+                    android:id="@+id/plus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/text01"
+                    android:layout_marginLeft="315dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/plus_register" />
+                </LinearLayout>
+
+                <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
+                <!--패스권 필요여부 텍스트-->
+                <LinearLayout
+                    android:id="@+id/llpass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text01"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="53dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:lineSpacingExtra="4sp"
+                        android:text="패스권 필요 여부"
+                        android:textColor="#5d5d5d"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <!--패스권이 필요한 프로젝트인가요?-->
+                <LinearLayout
+                    android:id="@+id/text02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llpass"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="9dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="패스권이 필요한 프로젝트인가요?" />
+                </LinearLayout>
+
+
+                <RadioGroup
+                    android:id="@+id/rg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/text02"
+                    android:layout_marginLeft="268dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rb01"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:button="@drawable/item_yes_no" />
+
+                    <RadioButton
+                        android:id="@+id/rb02"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="12dp"
+                        android:button="@drawable/item_yes_no" />
+                </RadioGroup>
+                <!--예 이미지-->
+
+
+                <!--예 텍스트-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rg"
+                    android:layout_marginLeft="273dp"
+                    android:layout_marginTop="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="예" />
+                </LinearLayout>
+
+
+                <!--아니오 텍스트-->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rg"
+                    android:layout_marginLeft="298dp"
+                    android:layout_marginTop="6dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="아니오" />
+                </LinearLayout>
+
+
+                <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+                <!--어떤 스킬 가진 사람 원하시나 텍스트-->
+                <LinearLayout
+                    android:id="@+id/llHoping"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text02"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="53dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="어떤 스킬을 가진 팀원을 원하시나요?" />
+                </LinearLayout>
+
+
+                <!--개발 텍스트-->
+                <LinearLayout
+                    android:id="@+id/llDevelText"
+                    android:layout_width="22dp"
+                    android:layout_height="11dp"
+                    android:layout_below="@+id/llHoping"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="23dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/devel" />
+                </LinearLayout>
+
+                <!--ios-->
+                <LinearLayout
+                    android:id="@+id/llIOS"
+                    android:layout_width="56dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llDevelText"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="19dp">
+
+                    <CheckBox
+                        android:id="@+id/cbIOS"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_ios_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--swift-->
+                <LinearLayout
+                    android:id="@+id/llSwift"
+                    android:layout_width="66dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llIOS"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llIOS">
+
+                    <CheckBox
+                        android:id="@+id/cbSwift"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_swift_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--android-->
+                <LinearLayout
+                    android:id="@+id/llAndroid"
+                    android:layout_width="82dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llSwift"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llSwift">
+
+                    <CheckBox
+                        android:id="@+id/cbAndroid"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_android_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--C-->
+                <LinearLayout
+                    android:id="@+id/llC"
+                    android:layout_width="45dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llAndroid"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llAndroid">
+
+                    <CheckBox
+                        android:id="@+id/cbC"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_c_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--C#-->
+                <LinearLayout
+                    android:id="@+id/llCsharp"
+                    android:layout_width="53dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llIOS"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cbCsharp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_csharp_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--objective C-->
+                <LinearLayout
+                    android:id="@+id/llObjectiveC"
+                    android:layout_width="102dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llCsharp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llCsharp">
+
+                    <CheckBox
+                        android:id="@+id/cbObjectiveC"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_objectivec_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--Java-->
+                <LinearLayout
+                    android:id="@+id/llJava"
+                    android:layout_width="68dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llObjectiveC"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llObjectiveC">
+
+                    <CheckBox
+                        android:id="@+id/cbJava"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_java_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--Python-->
+                <LinearLayout
+                    android:id="@+id/llPython"
+                    android:layout_width="77dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llJava"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llJava">
+
+                    <CheckBox
+                        android:id="@+id/cbPython"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_python_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--ruby-->
+                <LinearLayout
+                    android:id="@+id/llRuby"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llCsharp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cbRuby"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_ruby_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--Css-->
+                <LinearLayout
+                    android:id="@+id/llCss"
+                    android:layout_width="58dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llRuby"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llRuby">
+
+                    <CheckBox
+                        android:id="@+id/cbCss"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_css_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--PHP-->
+                <LinearLayout
+                    android:id="@+id/llPhp"
+                    android:layout_width="62dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llCss"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llCss">
+
+                    <CheckBox
+                        android:id="@+id/cbPhp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_php_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--JS-->
+                <LinearLayout
+                    android:id="@+id/llJS"
+                    android:layout_width="51dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llPhp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llPhp">
+
+                    <CheckBox
+                        android:id="@+id/cbJS"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_js_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--QA-->
+                <LinearLayout
+                    android:id="@+id/llQA"
+                    android:layout_width="54dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llJS"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llJS">
+
+                    <CheckBox
+                        android:id="@+id/cbQA"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_qa_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--html-->
+                <LinearLayout
+                    android:id="@+id/llHtml"
+                    android:layout_width="65dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llRuby"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cbHtml"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_html_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--Django-->
+                <LinearLayout
+                    android:id="@+id/llDjango"
+                    android:layout_width="77dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llHtml"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llHtml">
+
+                    <CheckBox
+                        android:id="@+id/cbDjango"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_django_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--JavaScript-->
+                <LinearLayout
+                    android:id="@+id/JllavaScript"
+                    android:layout_width="97dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llDjango"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llDjango">
+
+                    <CheckBox
+                        android:id="@+id/cbJavaScript"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_javascript_selector_tag_setting" />
+                </LinearLayout>
+
+
+
+
+                <!--기획 텍스트-->
+                <LinearLayout
+                    android:id="@+id/llPlanText"
+                    android:layout_width="21dp"
+                    android:layout_height="11dp"
+                    android:layout_below="@id/JllavaScript"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="40dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/plan" />
+                </LinearLayout>
+
+
+                <!--상품기획-->
+                <LinearLayout
+                    android:id="@+id/llProductPlan"
+                    android:layout_width="79dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llPlanText"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="19dp">
+
+                    <CheckBox
+                        android:id="@+id/cbProductPlan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_product_plan_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--콘텐츠 기획-->
+                <LinearLayout
+                    android:id="@+id/llContentsPlan"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llProductPlan"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llProductPlan">
+
+                    <CheckBox
+                        android:id="@+id/cbContentsPlan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_contents_plan_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--사업전략-->
+                <LinearLayout
+                    android:id="@+id/llBusuinessPlan"
+                    android:layout_width="79dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llContentsPlan"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llContentsPlan">
+
+                    <CheckBox
+                        android:id="@+id/cbBusuinessPlan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_busuiness_plan_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--서비스기획-->
+                <LinearLayout
+                    android:id="@+id/llServicePlan"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llProductPlan"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cbServicePlan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_service_plan_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--운영-->
+                <LinearLayout
+                    android:id="@+id/llOperation"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llServicePlan"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llServicePlan">
+
+                    <CheckBox
+                        android:id="@+id/cbOperation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_operation_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--마케팅 텍스트-->
+                <LinearLayout
+                    android:id="@+id/llMarketingText"
+                    android:layout_width="31dp"
+                    android:layout_height="11dp"
+                    android:layout_below="@id/llServicePlan"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="40dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/marketing" />
+                </LinearLayout>
+
+
+                <!--브랜드전략-->
+                <LinearLayout
+                    android:id="@+id/llBrandStrategy"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llMarketingText"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="19dp">
+
+                    <CheckBox
+                        android:id="@+id/cbBrandStrategy"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_brand_plan_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--마케팅 매니져-->
+                <LinearLayout
+                    android:id="@+id/llMargetingManager"
+                    android:layout_width="101dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llBrandStrategy"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llBrandStrategy">
+
+                    <CheckBox
+                        android:id="@+id/cbMargetingManager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_marketing_manager_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--서비스 마케터-->
+                <LinearLayout
+                    android:id="@+id/llServiceMarketor"
+                    android:layout_width="101dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llMargetingManager"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llMargetingManager">
+
+                    <CheckBox
+                        android:id="@+id/cbServiceMarketor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_service_marketor_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--광고 마케팅-->
+                <LinearLayout
+                    android:id="@+id/llAdMarketing"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llBrandStrategy"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cbAdMarketing"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_ad_marketing_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--데이터 분석-->
+                <LinearLayout
+                    android:id="@+id/llDataAnalysis"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llAdMarketing"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llAdMarketing">
+
+                    <CheckBox
+                        android:id="@+id/cbDataAnalysis"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_data_analysis_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--PR-->
+                <LinearLayout
+                    android:id="@+id/llPR"
+                    android:layout_width="51dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llDataAnalysis"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llDataAnalysis">
+
+                    <CheckBox
+                        android:id="@+id/cbPR"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_pr_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--IR-->
+                <LinearLayout
+                    android:id="@+id/llIR"
+                    android:layout_width="47dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llPR"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llPR">
+
+                    <CheckBox
+                        android:id="@+id/cbIR"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_ir_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--디자인 텍스트-->
+                <LinearLayout
+                    android:id="@+id/llDesignText"
+                    android:layout_width="31dp"
+                    android:layout_height="11dp"
+                    android:layout_below="@id/llAdMarketing"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="40dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/design" />
+                </LinearLayout>
+
+
+                <!--UI디자인-->
+                <LinearLayout
+                    android:id="@+id/llUIDesign"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llDesignText"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="19dp">
+
+                    <CheckBox
+                        android:id="@+id/cbUIDesign"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_ui_design_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--UX디자인-->
+                <LinearLayout
+                    android:id="@+id/llUXDesign"
+                    android:layout_width="83dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llUIDesign"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llUIDesign">
+
+                    <CheckBox
+                        android:id="@+id/cbUXDesign"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_ux_design_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--일러스트디자인-->
+                <LinearLayout
+                    android:id="@+id/llillustDesign"
+                    android:layout_width="112dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llUXDesign"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llUXDesign">
+
+                    <CheckBox
+                        android:id="@+id/cbillustDesign"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_illust_design_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--게임디자인-->
+                <LinearLayout
+                    android:id="@+id/llGameDesign"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llUIDesign"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cbGameDesign"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_game_design_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--그래픽디자인-->
+                <LinearLayout
+                    android:id="@+id/llGraphicDesign"
+                    android:layout_width="101dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llGameDesign"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llGameDesign">
+
+                    <CheckBox
+                        android:id="@+id/cbGraphicDesign"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_graphic_design_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--웹디자인-->
+                <LinearLayout
+                    android:id="@+id/llWebDesign"
+                    android:layout_width="79dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llGraphicDesign"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llGraphicDesign">
+
+                    <CheckBox
+                        android:id="@+id/cbWebDesign"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_web_design_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--모바일디자인-->
+                <LinearLayout
+                    android:id="@+id/llMobileDeisgn"
+                    android:layout_width="101dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llGameDesign"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cbMobileDeisgn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_mobile_design_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--메니지먼트 텍스트-->
+                <LinearLayout
+                    android:id="@+id/llManagementText"
+                    android:layout_width="54dp"
+                    android:layout_height="11dp"
+                    android:layout_below="@id/llMobileDeisgn"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="40dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/management" />
+                </LinearLayout>
+
+                <!--영업-->
+                <LinearLayout
+                    android:id="@+id/llSales"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llManagementText"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="19dp">
+
+                    <CheckBox
+                        android:id="@+id/cbSales"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_sales_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--크리에이티브디렉터-->
+                <LinearLayout
+                    android:id="@+id/llCreateDirector"
+                    android:layout_width="137dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llSales"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llSales">
+
+                    <CheckBox
+                        android:id="@+id/cbCreateDirector"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_creative_director_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--리크루팅-->
+                <LinearLayout
+                    android:id="@+id/llRecruiting01"
+                    android:layout_width="79dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llCreateDirector"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llCreateDirector">
+
+                    <CheckBox
+                        android:id="@+id/cbRecruiting01"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_recruiting_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--프로젝트 메니져-->
+                <LinearLayout
+                    android:id="@+id/llProjectManager"
+                    android:layout_width="115dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llSales"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cbProjectManager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_project_manager_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--CEO-->
+                <LinearLayout
+                    android:id="@+id/llCEO"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llProjectManager"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llProjectManager">
+
+                    <CheckBox
+                        android:id="@+id/cbCEO"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_ceo_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--CFO-->
+                <LinearLayout
+                    android:id="@+id/llCFO"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llCEO"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llCEO">
+
+                    <CheckBox
+                        android:id="@+id/cbCFO"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_cfo_selector_tag_setting" />
+
+                </LinearLayout>
+
+                <!--VP-->
+                <LinearLayout
+                    android:id="@+id/llVP"
+                    android:layout_width="51dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llCFO"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llCFO">
+
+                    <CheckBox
+                        android:id="@+id/cbVP"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_vp_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--CTO-->
+                <LinearLayout
+                    android:id="@+id/llCTO"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llProjectManager"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cbCTO"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_cto_selector_tag_setting" />
+
+                </LinearLayout>
+
+
+                <!--COO-->
+                <LinearLayout
+                    android:id="@+id/llCOO"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llCTO"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llCTO">
+
+                    <CheckBox
+                        android:id="@+id/cbCOO"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_coo_selector_tag_setting" />
+
+                </LinearLayout>
+
+
+                <!--HR-->
+                <LinearLayout
+                    android:id="@+id/llHR"
+                    android:layout_width="51dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llCOO"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llCOO">
+
+                    <CheckBox
+                        android:id="@+id/cbHR"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_hr_selector_tag_setting" />
+
+                </LinearLayout>
+
+                <!--CMO-->
+                <LinearLayout
+                    android:id="@+id/llCMO"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llHR"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llHR">
+
+                    <CheckBox
+                        android:id="@+id/cbCMO"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_cmo_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^-->
+                <!--관련있는 키워드 선택해주세요-->
+                <LinearLayout
+                    android:id="@+id/llchooseKeyword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/llCMO"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="53dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="이 프로젝트와 관련이 있는 키워드를 선택해주세요" />
+                </LinearLayout>
+
+
+                <!--b2b-->
+                <LinearLayout
+                    android:id="@+id/llb2b"
+                    android:layout_width="62dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llchooseKeyword"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="19dp">
+
+                    <CheckBox
+                        android:id="@+id/cbb2b"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_b2b_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--b2c-->
+                <LinearLayout
+                    android:id="@+id/llb2c"
+                    android:layout_width="62dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llchooseKeyword"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_toRightOf="@+id/llb2b">
+
+                    <CheckBox
+                        android:id="@+id/cbb2c"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_b2c_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--c2c-->
+                <LinearLayout
+                    android:id="@+id/llc2c"
+                    android:layout_width="62dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llchooseKeyword"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_toRightOf="@+id/llb2c">
+
+                    <CheckBox
+                        android:id="@+id/cbc2c"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_c2c_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--o2o-->
+                <LinearLayout
+                    android:id="@+id/llo2o"
+                    android:layout_width="62dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llchooseKeyword"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_toRightOf="@+id/llc2c">
+
+                    <CheckBox
+                        android:id="@+id/cbo2o"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_o2o_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--o2o-->
+                <LinearLayout
+                    android:id="@+id/llapp"
+                    android:layout_width="48dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llchooseKeyword"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_toRightOf="@+id/llo2o">
+
+                    <CheckBox
+                        android:id="@+id/cbapp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_app_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--빅데이터-->
+                <LinearLayout
+                    android:id="@+id/llbigdata"
+                    android:layout_width="79dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llb2b"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cbbigdata"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_bigdata_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--커머스-->
+                <LinearLayout
+                    android:id="@+id/llcommerce"
+                    android:layout_width="68dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llbigdata"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llbigdata">
+
+                    <CheckBox
+                        android:id="@+id/cbcommerce"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_commerce_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--네트워크-->
+                <LinearLayout
+                    android:id="@+id/llNetwork"
+                    android:layout_width="79dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llcommerce"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llcommerce">
+
+                    <CheckBox
+                        android:id="@+id/cbnetwork"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_network_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--인공지능-->
+                <LinearLayout
+                    android:id="@+id/llAI"
+                    android:layout_width="79dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llNetwork"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llNetwork">
+
+                    <CheckBox
+                        android:id="@+id/cbai"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_ai_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--로봇-->
+                <LinearLayout
+                    android:id="@+id/llRobot"
+                    android:layout_width="62dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llbigdata"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cbrobot"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_robot_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--자동차-->
+                <LinearLayout
+                    android:id="@+id/llCar"
+                    android:layout_width="68dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llRobot"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llRobot">
+
+                    <CheckBox
+                        android:id="@+id/cbcar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_car_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--드론-->
+                <LinearLayout
+                    android:id="@+id/llDrone"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llCar"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llCar">
+
+                    <CheckBox
+                        android:id="@+id/cbdrone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_drone_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--엔터테인먼트-->
+                <LinearLayout
+                    android:id="@+id/llEntertainment"
+                    android:layout_width="101dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llDrone"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llDrone">
+
+                    <CheckBox
+                        android:id="@+id/cbentertainment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_entertainment_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--ecommerce-->
+                <LinearLayout
+                    android:id="@+id/llecommerce"
+                    android:layout_width="109dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llRobot"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cbEcommerce"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_ecommerce_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--커뮤니티-->
+                <LinearLayout
+                    android:id="@+id/llCommunity"
+                    android:layout_width="79dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llecommerce"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llecommerce">
+
+                    <CheckBox
+                        android:id="@+id/cbCommunity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_community_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--웹툰-->
+                <LinearLayout
+                    android:id="@+id/llWebtoon"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llCommunity"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llCommunity">
+
+                    <CheckBox
+                        android:id="@+id/cbWebtoon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_webtoon_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--패션-->
+                <LinearLayout
+                    android:id="@+id/llFashion"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llWebtoon"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llWebtoon">
+
+                    <CheckBox
+                        android:id="@+id/cbFashion"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_fashion_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--뮤직-->
+                <LinearLayout
+                    android:id="@+id/llMusic"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llecommerce"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cbMusic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_music_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--매거진-->
+                <LinearLayout
+                    android:id="@+id/llMegazine"
+                    android:layout_width="68dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llMusic"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llMusic">
+
+                    <CheckBox
+                        android:id="@+id/cbMegazine"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_magazine_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--블로그-->
+                <LinearLayout
+                    android:id="@+id/llBlog"
+                    android:layout_width="68dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llMegazine"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llMegazine">
+
+                    <CheckBox
+                        android:id="@+id/cbBlog"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_blog_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--라이프스타일-->
+                <LinearLayout
+                    android:id="@+id/llLifeStyle"
+                    android:layout_width="101dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llBlog"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llBlog">
+
+                    <CheckBox
+                        android:id="@+id/cbLifeStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_lifestyle_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--금융-->
+                <LinearLayout
+                    android:id="@+id/llMoney"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llMusic"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cbMoney"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_money_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--여행-->
+                <LinearLayout
+                    android:id="@+id/llTrip"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llMoney"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llMoney">
+
+                    <CheckBox
+                        android:id="@+id/cbTrip"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_trip_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--게임-->
+                <LinearLayout
+                    android:id="@+id/llGame"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llTrip"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llTrip">
+
+                    <CheckBox
+                        android:id="@+id/cbGame"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_game_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--푸드-->
+                <LinearLayout
+                    android:id="@+id/llFood"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llGame"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llGame">
+
+                    <CheckBox
+                        android:id="@+id/cbFood"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_food_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--스케쥴-->
+                <LinearLayout
+                    android:id="@+id/llSchedule"
+                    android:layout_width="68dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llFood"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llFood">
+
+                    <CheckBox
+                        android:id="@+id/cbSchedule"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_schedule_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--취미-->
+                <LinearLayout
+                    android:id="@+id/llHobby"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llMoney"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cbHobby"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_hobby_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--피트니스-->
+                <LinearLayout
+                    android:id="@+id/llFitness"
+                    android:layout_width="79dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llHobby"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llHobby">
+
+                    <CheckBox
+                        android:id="@+id/cbFitness"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_fitness_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--비트코인-->
+                <LinearLayout
+                    android:id="@+id/llBitCoin"
+                    android:layout_width="79dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llFitness"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llFitness">
+
+                    <CheckBox
+                        android:id="@+id/cbBitCoin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_bitcoin_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--바이오테크-->
+                <LinearLayout
+                    android:id="@+id/llBioTech"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llBitCoin"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llBitCoin">
+
+                    <CheckBox
+                        android:id="@+id/cbBioTech"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_biotech_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--소셜-->
+                <LinearLayout
+                    android:id="@+id/llSocial"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llHobby"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cbSocial"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_social_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--핀테크-->
+                <LinearLayout
+                    android:id="@+id/llFinTech"
+                    android:layout_width="68dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llSocial"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llSocial">
+
+                    <CheckBox
+                        android:id="@+id/cbFinTech"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_fintech_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--하이브리드-->
+                <LinearLayout
+                    android:id="@+id/llHybrid"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llFinTech"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llFinTech">
+
+                    <CheckBox
+                        android:id="@+id/cbHybrid"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_hybrid_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--헬스케어-->
+                <LinearLayout
+                    android:id="@+id/llHeathCare"
+                    android:layout_width="79dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llHybrid"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llHybrid">
+
+                    <CheckBox
+                        android:id="@+id/cbHealthCare"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_healthcare_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--교육-->
+                <LinearLayout
+                    android:id="@+id/llEducation"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llSocial"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cbEducation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_education_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--e-book-->
+                <LinearLayout
+                    android:id="@+id/llEBook"
+                    android:layout_width="76dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llEducation"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llEducation">
+
+                    <CheckBox
+                        android:id="@+id/cbEBook"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_ebook_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--우주항공-->
+                <LinearLayout
+                    android:id="@+id/llSpace"
+                    android:layout_width="79dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llEBook"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llEBook">
+
+                    <CheckBox
+                        android:id="@+id/cbSpace"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_space_tag_setting" />
+                </LinearLayout>
+
+                <!--사회적 기업-->
+                <LinearLayout
+                    android:id="@+id/llSocialCompany"
+                    android:layout_width="90dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llSpace"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llSpace">
+
+                    <CheckBox
+                        android:id="@+id/cbSocialCompany"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_socialcompany_selector_tag_setting" />
+                </LinearLayout>
+
+
+                <!--사진-->
+                <LinearLayout
+                    android:id="@+id/llPicture"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llEducation"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cbPicture"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_picture_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--에너지-->
+                <LinearLayout
+                    android:id="@+id/llEnergy"
+                    android:layout_width="68dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llPicture"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llPicture">
+
+                    <CheckBox
+                        android:id="@+id/cbEnergy"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_energy_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--복지-->
+                <LinearLayout
+                    android:id="@+id/llWellBeing"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llEnergy"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llEnergy">
+
+                    <CheckBox
+                        android:id="@+id/cbWellBeing"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_wellbeing_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--채용-->
+                <LinearLayout
+                    android:id="@+id/llRecruiting"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llWellBeing"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llWellBeing">
+
+                    <CheckBox
+                        android:id="@+id/cbRecruiting"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_recruiting_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--웨딩-->
+                <LinearLayout
+                    android:id="@+id/llWedding"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llRecruiting"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llRecruiting">
+
+                    <CheckBox
+                        android:id="@+id/cbWedding"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_wedding_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--의료-->
+                <LinearLayout
+                    android:id="@+id/llDoctor"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/llPicture"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp">
+
+                    <CheckBox
+                        android:id="@+id/cbDoctor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_doctor_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--웨딩-->
+                <LinearLayout
+                    android:id="@+id/llArt"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llDoctor"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llDoctor">
+
+                    <CheckBox
+                        android:id="@+id/cbArt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_art_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--생산성 -->
+                <LinearLayout
+                    android:id="@+id/llProductivity"
+                    android:layout_width="68dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llArt"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llArt">
+
+                    <CheckBox
+                        android:id="@+id/cbProductivity"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_productivity_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--협업-->
+                <LinearLayout
+                    android:id="@+id/llCoWork"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llProductivity"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llProductivity">
+
+                    <CheckBox
+                        android:id="@+id/cbCoWork"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_cowork_selector_tag_setting" />
+                </LinearLayout>
+
+                <!--비교-->
+                <LinearLayout
+                    android:id="@+id/llCompare"
+                    android:layout_width="57dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/llCoWork"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/llCoWork">
+
+                    <CheckBox
+                        android:id="@+id/cbCompare"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:button="@drawable/item_field_compare_selector_tag_setting" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp"
+                    android:layout_below="@+id/llCompare" />
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

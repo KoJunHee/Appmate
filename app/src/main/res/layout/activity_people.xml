@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--툴바-->
+    <include
+        android:id="@+id/icToolBarPeople"
+        layout="@layout/tool_bar_people" />
+
+    <!-- 인재 카드 리스트-->
+    <LinearLayout
+        android:id="@+id/secondLine"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/icToolBarPeople"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="48dp">
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvPeople"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+
+
+    <!--하단탭-->
+    <include
+        android:id="@+id/navigation"
+        layout="@layout/bottom_navigation_layout"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"/>
+</RelativeLayout>

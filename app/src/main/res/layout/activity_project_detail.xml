@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!--툴바-->
+    <include
+        android:id="@+id/icToolBar"
+        layout="@layout/tool_bar_project_detail" />
+
+    <!--프로젝트 이미지-->
+    <LinearLayout
+        android:id="@+id/llProjectImage"
+        android:layout_width="360dp"
+        android:layout_height="270dp"
+        android:layout_marginTop="46dp">
+        <ImageView
+            android:id="@+id/progectImg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:src="@drawable/project_detail_image"
+            android:scaleType="fitXY"/>
+    </LinearLayout>
+
+
+        <!--이미지 4개 : 수행기간, 댓글, 찜한사람, 분야및 스킬  -->
+        <RelativeLayout
+            android:id="@+id/llImages"
+            android:layout_width="360dp"
+            android:layout_height="78dp"
+            android:layout_marginTop="318dp"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+            <!--수행기간 텍스트-->
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="44dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:textColor="#5d5d5d"
+                    android:text="지원기간"
+                    />
+            </LinearLayout>
+            
+            <!--수행기간 D- -->
+            <LinearLayout
+                android:id="@+id/dminus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="18dp">
+                <ImageView
+                    android:id="@+id/dma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dday_detail"/>
+            </LinearLayout>
+
+            <!--디데이 숫자-->
+            <LinearLayout
+                android:id="@+id/llDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:id="@+id/tvProjectDday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:letterSpacing="-0.04"
+                    tools:text="12"/>
+            </LinearLayout>
+            
+            <!--댓글-->
+            <LinearLayout
+                android:layout_width="23dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="121dp"
+                android:layout_marginTop="18dp">
+                <ImageView
+                    android:id="@+id/ivComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/comment_detail" />
+            </LinearLayout>
+
+            <!--찜한 사람-->
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="43dp"
+                android:layout_marginLeft="205dp"
+                android:layout_marginTop="19dp">
+                <ImageView
+                    android:id="@+id/ivLikePeople"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/like_detail"/>
+            </LinearLayout>
+
+            <!--분야 및 스킬-->
+            <LinearLayout
+                android:layout_width="56dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="19dp"
+                android:layout_marginLeft="291dp"
+                android:layout_marginTop="17dp">
+                <ImageView
+                    android:id="@+id/ivFieldSkill"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/part_detail" />
+            </LinearLayout>
+        </RelativeLayout>
+    <!--여기까지 이미지 4개-->
+    
+    
+    <RelativeLayout
+        android:layout_width="360dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="400dp">
+
+        <!--사람 이미지-->
+        <LinearLayout
+            android:id="@+id/llidentity"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="11dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivUerImg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <!--title-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="12dp">
+            <TextView
+                android:id="@+id/tvProjectTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:textColor="@color/black"
+                tools:text="음성인식을 활용한 홈IOT프로덕트 디자인"
+                />
+        </LinearLayout>
+
+        <!--name-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginLeft="82dp"
+            android:layout_marginTop="36dp">
+            <TextView
+                android:id="@+id/tvUserName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="normal"
+                android:textColor="#b0bec5"
+                tools:text="Anna Carenina"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="72dp"
+            android:layout_alignLeft="@+id/llidentity"
+            android:layout_marginTop="71dp">
+            <TextView
+                android:id="@+id/tvProjectExplanation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:lineSpacingExtra="6sp"
+                tools:text="이 프로젝트는"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+    <!--지원하기 버튼-->
+    <LinearLayout
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:id="@+id/ivProjectApply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="48dp"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tbProjecDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/project_detail_tool_bar_bg">
+
+        <!--뒤로가기 버튼-->
+        <LinearLayout
+            android:id="@+id/llback"
+            android:layout_width="48dp"
+            android:layout_height="48dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/project_detail_back" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="260dp">
+
+            <CheckBox
+                android:id="@+id/cbLikeButton"
+                android:layout_width="22dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:button="@drawable/item_like_selector_project_detail" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+</LinearLayout>

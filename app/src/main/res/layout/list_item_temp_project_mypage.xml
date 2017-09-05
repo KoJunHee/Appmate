@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_custom_list_view"
+    android:layout_width="164dp"
+    android:layout_height="190dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cvListItemProject"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card:cardCornerRadius="3dp"
+        android:background="#ffffff">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <!--프로젝트 이미지-->
+            <LinearLayout
+                android:layout_marginTop="-4dp"
+                android:id="@+id/llProjectImage"
+                android:layout_width="164dp"
+                android:layout_height="145dp">
+                <ImageView
+                    android:id="@+id/ivProjectImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:src="@drawable/project_image_01"/>
+            </LinearLayout>
+
+            <!--프로젝트이름 -->
+            <LinearLayout
+                android:layout_below="@+id/llProjectImage"
+                android:id="@+id/llProjectName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="36dp">
+                <TextView
+                    android:id="@+id/projectTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:textColor="@color/black"
+                    tools:text="홈IOT를 위한 음성인식.."
+                    />
+            </LinearLayout>
+
+
+            <!--닉네임-->
+            <LinearLayout
+                android:layout_above="@+id/llProjectName"
+                android:id="@+id/llNickName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="38dp"
+                android:layout_marginBottom="2dp">
+                <TextView
+                    android:id="@+id/userNickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    tools:text="Nick name DEAN" />
+            </LinearLayout>
+
+            <!--구분선-->
+            <LinearLayout
+                android:id="@+id/line"
+                android:layout_width="150dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/llProjectName"
+                android:layout_marginLeft="7dp">
+                <View
+                    android:id="@+id/vLine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#dddedf"/>
+            </LinearLayout>
+
+
+            <!--써클러 이미지-->
+            <LinearLayout
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_above="@+id/line"
+                android:layout_marginLeft="7dp"
+                android:layout_marginBottom="7dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
